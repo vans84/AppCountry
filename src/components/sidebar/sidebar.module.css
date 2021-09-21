@@ -1,0 +1,10 @@
+.root {
+	padding: 4px;
+	width: 200px;
+	height: 100vh;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+	z-index: 10;
+	position: sticky;
+	left: 0;
+	top: 0;
+}

@@ -1,0 +1,56 @@
+@import '../../globalStyles.css';
+
+.navbarContainer {
+  width: 100%;
+  background-color: var(--elements-primary);
+  transition: background-color 0.2s ease;
+  margin: 0 auto;
+}
+.navBar {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 2rem 5rem;
+  font-size: 0.5rem;
+  margin-bottom: 2vh;
+}
+.themeSwitcher {
+  display: flex;
+}
+.navBar .themeSwitcher button {
+  background-color: var(--elements-primary);
+  transition: background-color 0.2s ease;
+  color: var(--text-primary);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: var(--font-size-secondary);
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+.moon {
+  fill: var(--elements-primary);
+  stroke: var(--text-primary);
+  stroke-linecap: round;
+  height: 0.89rem;
+  width: 0.8rem;
+  stroke-linejoin: round;
+  stroke-width: 32px;
+  margin-right: 0.4rem;
+}
+
+.navBar a:nth-child(1) {
+  font-size: calc(var(--font-size-primary) + 0.2rem);
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .navBar {
+    padding: 1rem;
+  }
+}
